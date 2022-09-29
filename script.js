@@ -4,8 +4,7 @@ var upperCase;
 var lowerCase;
 var specialCharacter;
 var passwordLength
-var userChoice;//var selection
-var lettersUp
+var userChoice;
 
 const setsOfcharacters = ["character", "number", "letters"];
 
