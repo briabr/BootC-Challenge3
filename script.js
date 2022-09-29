@@ -4,9 +4,15 @@ var upperCase;
 var lowerCase;
 var specialCharacter;
 var passwordLength
-var userChoice;
+var userChoice;//var selection
+var capitalLetters
 
-const setsOfcharacters = ["character", "number", "letters"];
+const setsOfcharacters = ["character","number", "letters"];
+character = "!@#$%^&*)()";
+number = "0123456789";
+letters = "abcdefghijklmnopqrstuvwxyz";
+capiltalLetters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+character = "!@#$%^&*)()";
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
