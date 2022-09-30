@@ -24,13 +24,11 @@ function writePassword() {
 }
 // setting password parameters
 function generatePassword() {
-  // choose number of characters for new password
-  passwordLength = prompt("Enter number of characters between 8-10 for your password");
-  if (!passwordLength) {
-    alert("Please enter the right number of charachters");
-  } else if (length < 8 || length > 10) {
+  // choose number of characters for your password
+  passwordLength = prompt("Enter number of characters between 8-128 for your password");
+     if (length < 8 || length > 128) {
     // wrong number of characters was entered
-    passwordLength = prompt("password must be from 8-10 characters");
+    passwordLength = prompt("password must be between 8-128 characters inclusive");
   }
 }
 // Add event listener to generate button
