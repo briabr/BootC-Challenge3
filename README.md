@@ -4,6 +4,7 @@
 
 Modifying starter code to create an application that enables employees to generate random passwords based on following listed criteria:
 
+```
 GIVEN I need a new, secure password
 WHEN I click the button to generate a password
 THEN I am presented with a series of prompts for password criteria
@@ -19,8 +20,10 @@ WHEN all prompts are answered
 THEN a password is generated that matches the selected criteria
 WHEN the password is generated
 THEN the password is either displayed in an alert or written to the page
+```
 
 ## Steps in achieving the task 
+```
 1- Defining the data needed:
    different sets of characters maybe strings or arrays
    numbers
@@ -35,5 +38,6 @@ THEN the password is either displayed in an alert or written to the page
  7- Puting the selected characters together
  8- Randomly selecting characters from all of the selected characters 
  9- combine the characters together
+ ```
 
 
