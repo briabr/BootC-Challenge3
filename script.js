@@ -7,7 +7,7 @@ var passwordLength;
 var userChoice;
 var capitalLetters;
 
-setsOfcharacters = ["character","number", "letters"];
+setsofCharacters = ["character","number", "letters"];
 character = "!@#$%^&*)()";
 number = "0123456789";
 letters = "abcdefghijklmnopqrstuvwxyz";
