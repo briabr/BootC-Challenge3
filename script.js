@@ -1,17 +1,17 @@
 // Assignment code here
 // Variables 
-var number;
+var numbers;
 var upperCase;
 var lowerCase;
-var specialCharacter;
+var specialCharacters;
 var passwordLength;
 var userChoice;
 var capitalLetters;
-var characterCount
+var charactersCount
 
-setsofCharacters = ["character","number", "letters"];
-character = "!@#$%^&*)()";
-number = "0123456789";
+setsofCharacters = ["characters","numbers", "letters"];
+characters = "!@#$%^&*)()";
+numbers = "0123456789";
 letters = "abcdefghijklmnopqrstuvwxyz";
 capiltalLetters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
@@ -28,20 +28,20 @@ function writePassword() {
 function generatePassword() {
   // choose number of characters for your password
   passwordLength = prompt("Enter number of characters between 8-128 for your password");
-     if (length < 8 || length > 128) {
+     if (passwordLength < 8 || passwordLength > 128) {
     // wrong number of characters was entered
     passwordLength = prompt("password must be between 8-128 characters inclusive");
   } else { // whether the user chose numbers, lowercase, uppercase or specialcase
-    number = confirm("Do you want to use numbers in your password?");
+    numbers = confirm("Do you want to use numbers in your password?");
     lowerCase = confirm("Do you want to use lowercases in your password?");
     upperCase = confirm("Do you want to use uppercases in your password?");
-    specialCharacter = confirm("Do you want to use special characters in your password?");
+    specialCharacters = confirm("Do you want to use special characters in your password?");
   };
 // put the selected characters together
 // randomly select characters from all of the selected characters 
 // put them together
 }
-// var characterCount = 0
+// var charactersCount = 0
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
