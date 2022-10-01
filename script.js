@@ -7,20 +7,17 @@ var lowerCase;
 var specialCharacters;
 var passwordLength;
 var userChoice;
-// var capitalLetters;
 var charactersCount
 var password = "";
 var userchoice = "";
 var charString = "";
 
 
-// setsofCharacters = ["characters","numbers", "letters"];
 specialCharacters = "!@#$%^&*)()";
 numbers = "0123456789";
 lowerCase = "abcdefghijklmnopqrstuvwxyz";
 upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-
-  function generatePassword() {
+function generatePassword() {
 var passwordLength = prompt("How many characters you want your password to include?");
 while (passwordLength < 8 || passwordLength > 128) {
   passwordLength = prompt("Password must be between 8-128 characters. How many characters do you want your password to include?");
@@ -37,8 +34,6 @@ if (!charString) {
   alert("Please select at least one character type!");
 }
 console.log(charString)
-
-//for loop for randonmly selecting characters from charString 
-// return password
   }
- 
+ //for loop for randonmly selecting characters from charString 
+//eturn password
