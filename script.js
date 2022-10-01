@@ -5,13 +5,12 @@ var numbers;
 var upperCase;
 var lowerCase;
 var specialCharacters;
-var passwordLength;
+var passwordLength = 0;
 var userChoice;
 var charactersCount
 var password = "";
 var userchoice = "";
 var charString = "";
-
 
 specialCharacters = "!@#$%^&*)()";
 numbers = "0123456789";
@@ -40,16 +39,16 @@ specialcharPrompt = confirm("Do you want to use special characters in your passw
 if (specialcharPrompt === true) {
   charString = charString.concat(specialCharacters);
 }
-
 if (!charString) {
   alert("Please select at least one character type!");
 }
+for (var i = 0; i < passwordLength; i++) {
+  var index = (Math.floor(Math.random) * charString.length);;
+ password = password + charString[index]
+}
+return password
 console.log(charString)
-  }
- //for loop for randonmly selecting characters from charString 
-//return password at the end 
-
-// Write password to the #password input
+}
 function writePassword() {
   var password = generatePassword(); 
   var passwordText = document.querySelector("#password");
