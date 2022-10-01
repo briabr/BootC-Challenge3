@@ -9,7 +9,6 @@ var passwordLength = 0;
 var userChoice;
 var charactersCount
 var password = "";
-var userchoice = "";
 var charString = "";
 
 specialCharacters = "!@#$%^&*)()";
@@ -43,11 +42,11 @@ if (!charString) {
   alert("Please select at least one character type!");
 }
 for (var i = 0; i < passwordLength; i++) {
-  var index = (Math.floor(Math.random) * charString.length);;
+  var index = (Math.floor(Math.random) * charString.length);
  password = password + charString[index]
+ console.log(charString)
 }
 return password
-console.log(charString)
 }
 function writePassword() {
   var password = generatePassword(); 
