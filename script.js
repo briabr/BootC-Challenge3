@@ -28,9 +28,18 @@ numbersPrompt = confirm("Do you want to use numbers in your password?");
 if (numbersPrompt === true) {
   charString = charString.concat(numbers);
 }
-lowerCase = confirm("Do you want to use lowercases in your password?");
-upperCase = confirm("Do you want to use uppercases in your password?");
-specialCharacters = confirm("Do you want to use special characters in your password?");
+lowerPrompt = confirm("Do you want to use lowercases in your password?");
+if (lowerPrompt === true) {
+  charString = charString.concat(lowerCase);
+}
+upperPrompt = confirm("Do you want to use uppercases in your password?");
+if (upperPrompt === true) {
+  charString = charString.concat(upperCase);
+}
+specialcharPrompt = confirm("Do you want to use special characters in your password?");
+if (specialcharPrompt === true) {
+  charString = charString.concat(specialCharacters);
+}
 
 if (!charString) {
   alert("Please select at least one character type!");
