@@ -5,19 +5,22 @@ var numbers;
 var upperCase;
 var lowerCase;
 var specialCharacters;
-var passwordLength = 0;
-var userChoice;
+var userInput = [];
 var charactersCount
-var password = "";
-var charString = "";
 
-specialCharacters = "!@#$%^&*)()";
-numbers = "0123456789";
-lowerCase = "abcdefghijklmnopqrstuvwxyz";
-upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+// specialCharacters = "!@#$%^&*)()";
+// numbers = "0123456789";
+// lowerCase = "abcdefghijklmnopqrstuvwxyz";
+// upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+specialCharacters = ["!","@","#","$","%","^","&"];
+numbers = ["1","2","3","4"];
+lowerCase = ["a","b","c"];
+upperCase =["A","B","C"]
 
 var generateBtn = document.querySelector("#generate");
 function generatePassword() {
+  var password = "";
+  var charString = [];
 var passwordLength = prompt("How many characters you want your password to include?");
 while (passwordLength < 8 || passwordLength > 128) {
   passwordLength = prompt("Password must be between 8-128 characters. How many characters do you want your password to include?");
@@ -41,10 +44,11 @@ if (specialcharPrompt === true) {
 if (!charString) {
   alert("Please select at least one character type!");
 }
+
 for (var i = 0; i < passwordLength; i++) {
-  var index = (Math.floor(Math.random) * charString.length);
+  var index = (Math.floor(Math.random() * charString.length));
+  console.log(index)
  password = password + charString[index]
- console.log(charString)
 }
 return password
 }
@@ -55,3 +59,5 @@ function writePassword() {
 }
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
+
+  
