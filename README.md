@@ -1,4 +1,4 @@
-# BootC-Challenge3's Password Generator Starter Code
+# BootC-Challenge3's Password Generator
 
 ## Description
 
