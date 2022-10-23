@@ -1,9 +1,17 @@
 # BootC-Challenge3's Password Generator Starter Code
 
-## Task
+## Description
 
-Modifying starter code to create an application that enables employees to generate random passwords based on following listed criteria:
+Create an application that an employee can use to generate a random password based on criteria they've selected. 
 
+## User Story 
+```
+AS AN employee with access to sensitive data
+I WANT to randomly generate a password that meets certain criteria
+SO THAT I can create a strong password that provides greater security
+
+``` 
+## Acceptance Criteria
 ```
 GIVEN I need a new, secure password
 WHEN I click the button to generate a password
@@ -39,5 +47,14 @@ THEN the password is either displayed in an alert or written to the page
  8- Randomly selecting characters from all of the selected characters 
  9- combine the characters together
  ```
+ ## Mock-Up
+
+The following image shows the web application's appearance and functionality:
+
+![The Password Generator application displays a red button to "Generate Password".](./Assets/03-javascript-homework-demo.png)
+
+## ScreenShot of the deployed application
+
+![](./assets/Screen%20Shot%202022-10-23%20at%2012.00.16%20AM.png)
 
 
