@@ -57,4 +57,7 @@ The following image shows the web application's appearance and functionality:
 
 ![](./assets/Screen%20Shot%202022-10-23%20at%2012.00.16%20AM.png)
 
+## Deployed Application Link
+https://briabr.github.io/Javascript-Password-Generator/
+
 
